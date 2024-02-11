@@ -12,14 +12,14 @@ let userEmail;       // or  let userEmail = undefined;
 const id = Symbol('123');
 const anotherId = Symbol('123');
 
-console.log(typeof anotherId);         //symbol
+// console.log(typeof anotherId);         //symbol
 
 // console.log(id === anotherId);      //false
 // console.log(id == anotherId);       //false
 
 const bigNumber = 1123343546576n;
 
-console.log(typeof bigNumber);      //bigint
+// console.log(typeof bigNumber);      //bigint
 
 
 
@@ -29,7 +29,7 @@ console.log(typeof bigNumber);      //bigint
 
 const heroes = ["IronMan" , "Thor" , "Captain America" , "Hulk"];
 
-console.log(typeof heroes);      // heroes
+// console.log(typeof heroes);      // heroes
 
 let myObj = {
     name : "Shivank",
@@ -40,8 +40,8 @@ const myFunction = function(){
     console.log("Hello World");
 }
 
-console.log(myFunction);
-console.log(typeof myFunction);      //function
+// console.log(myFunction);
+// console.log(typeof myFunction);      //function
 
 
 /*
@@ -60,3 +60,30 @@ Return type of variables in JavaScript
        Function  =>  function
        Object  =>  object
 */
+
+
+// *************************************
+//      Stack (Primitive) , Heap (Non-Primitive)
+
+let myName = "ShivankChaudhary";
+
+let anotherName = myName;
+anotherName = "VishuChaudhary";
+
+console.log(myName);
+console.log(anotherName);
+
+let userOne = {
+    email : "userOne@gmail.com",
+    upi : "userOne@upi.com"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "userTwo@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+// Stack ---> changes are made to copied value, original value remains same.
+// Heap ---> changes are made to real value.
