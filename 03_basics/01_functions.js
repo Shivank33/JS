@@ -49,17 +49,68 @@ function loginUserMessage(userName) {
 //(userName = "Stark") --> now default value of username is Stark for no value is given,
 //value will automatically become Stark and if value is given then it will override Stark.
 
-console.log(loginUserMessage("Shivank"));           // Shivank just logged in
+// console.log(loginUserMessage("Shivank"));           // Shivank just logged in
 
-console.log(loginUserMessage());                    // undefined just logged in
+// console.log(loginUserMessage());                    // undefined just logged in
 // When arguments are not passed then undefined is returned by default.
 
-function loginUserMessage2(userName2) {
-    if(userName2 === undefined){           // or-->  if(!userName)
-        console.log("Please enter userName");
-        return;
-    }
-    return `${userName2} just logged in`;
+// function loginUserMessage2(userName2) {
+//     if(userName2 === undefined){           // or-->  if(!userName)
+//         console.log("Please enter userName");
+//         return;
+//     }
+//     return `${userName2} just logged in`;
+// }
+// console.log(loginUserMessage2());           //Please enter userName        undefined
+
+
+// **** Rest ****
+
+// function calculateCartPrice(...num1){
+//     return num1;
+// }
+
+// console.log(calculateCartPrice(100,200,300,400));           // [ 100, 200, 300, 400 ]
+//Here num1 = [ 100, 200, 300, 400 ]
+
+
+// function calculateCartPrice(val1 , val2 , ...num1){
+//     return num1;
+// }
+
+// console.log(calculateCartPrice(100,200,300,400));           // [ 300, 400 ]
+// //Here val1 = 100, val2 = 200, num1 = [300,400]
+
+
+// const product = {
+//     name : "laptop", 
+//     price : 50000
+// }
+
+// function objectHandler(anyObject) {
+//     console.log(`Name of product is ${anyObject.name} and its price is ${anyObject.price}`);
+// }
+
+// objectHandler(product);
+
+
+
+// const myArray = [200 , 400 , 600 , 800];
+
+// function returnSecondValue(value) {
+//     return myArray[value];
+// }
+
+// const answer = returnSecondValue(1);
+// console.log(`The answer is ${answer}`);      //The answer is 400
+
+
+const myArray = [200 , 400 , 600 , 800];
+
+function returnSecondValue(getArray){
+    return getArray[1];
 }
-console.log(loginUserMessage2());           //Please enter userName        undefined
+
+// console.log(returnSecondValue(myArray));        // 400
+console.log(returnSecondValue([200 , 400 , 600 , 800]));            // 400
 
