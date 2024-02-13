@@ -45,17 +45,50 @@ const users = [
 
 // console.log(users[2].email);            //i@gmail.com
 
-console.log(instaUser);
+// console.log(instaUser);
 
-console.log(Object.keys(instaUser));        // [ 'id', 'name', 'isLoggedIn' ]
+// console.log(Object.keys(instaUser));        // [ 'id', 'name', 'isLoggedIn' ]
 //Returns only keys in an array.
 
-console.log(Object.values(instaUser));      // [ 'shivank000', 'shivank', true ]
+// console.log(Object.values(instaUser));      // [ 'shivank000', 'shivank', true ]
 //Returns only values in an array.
 
-console.log(Object.entries(instaUser));
+// console.log(Object.entries(instaUser));
 // [ [ 'id', 'shivank000' ], [ 'name', 'shivank' ],   [ 'isLoggedIn', true ] ]
 // Returns array in array of key- value pairs.
 
-console.log(instaUser.hasOwnProperty('isLoggedIn'));        //true
-console.log(instaUser.hasOwnProperty('address'));           //false
+// console.log(instaUser.hasOwnProperty('isLoggedIn'));        //true
+// console.log(instaUser.hasOwnProperty('address'));           //false
+
+
+//  ***************  Object de structure  ******************
+
+const course = {
+    courseName : "JavaScript",
+    price : 999,
+    platform : "Youtube"
+}
+
+const {platform} = course;
+console.log(platform);                  //Youtube
+
+const {courseName : name} = course;
+console.log(name);                      //JavaScript
+// console.log(courseName);            //Error
+
+// APIs --->
+/*
+{
+    "name" : "Shivank",
+    "id" : 20,
+    "location" : "Delhi"
+}
+*/
+
+/*
+[
+    {},
+    {},
+    {}
+]
+*/
