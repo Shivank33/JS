@@ -60,3 +60,6 @@ if(loggedInFromGoogle || loggedInFromEmail){
     console.log("User logged in");
 }
 
+//   &&   -> AND operator
+//   ||   -> OR operator
+
