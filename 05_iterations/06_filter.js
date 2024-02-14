@@ -7,7 +7,7 @@
 // console.log(answer);             //undefined (return value of answer).
 
 
-//  ************   filter map  *************
+//  ************   filter  *************
 // for each does not return any value.
 // filter method returns values.
 
