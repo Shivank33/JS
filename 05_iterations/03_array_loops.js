@@ -1,4 +1,5 @@
 //     *************  for of loop   **************
+// it is basically used to print values directly (we can print both also).
 
 // const arr = [1 , 2 , 3 , 4 , 5];
 
