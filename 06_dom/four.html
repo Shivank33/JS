@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On Element</title>
+</head>
+<body style = "background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement("li");
+        li.innerHTML = langName;
+        document.querySelector(".language").appendChild(li);
+    }
+    addLanguage("Python");
+    addLanguage("Java");
+    addLanguage("CPP");
+
+    //Optimised way
+    function addOptiLanguage(langName){
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector(".language").appendChild(li);
+    }
+    addOptiLanguage("HTML");
+    addOptiLanguage("CSS");
+
+    //Edit values
+    const secondLang = document.querySelector("li:nth-child(2)");
+    // secondLang.innerHTML = "Ruby";
+    const newLi = document.createElement("li");
+    newLi.textContent = "Ruby";
+    secondLang.replaceWith(newLi);
+    // python is replaced with Ruby
+
+    //Edit 
+    const firstLang = document.querySelector("li");
+    firstLang.outerHTML = "<li>Node JS</li>";
+
+    // remove
+    const lastLang = document.querySelector("li:last-child");
+    lastLang.remove();
+    // CSS removed
+</script>
+</html>
