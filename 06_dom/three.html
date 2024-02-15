@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Element</title>
+</head>
+<body style = "background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "main";
+    div.id = Math.round(Math.random() * 10 + 1);
+    div.setAttribute("title", "generated title");
+    div.style.backgroundColor = "violet";
+    div.style.color = "red";
+    div.style.textAlign = "center";
+    div.style.fontSize = "20px";
+    div.style.padding = "30px";
+    // div.innerText = "Shivank Chaudhary";                      //not much preffered (use createTextNode instead).
+    const addText = document.createTextNode("Shivank Chaudhary");
+    div.appendChild(addText);
+
+    document.body.appendChild(div);
+</script>
+</html>
