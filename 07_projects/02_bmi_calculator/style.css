@@ -34,7 +34,7 @@ body{
     color: black;
     font-size: 28px;
     margin-left: 150px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -43,14 +43,23 @@ body{
     display: flex;
     align-content: center;
     text-align: center;
-    color: red;
     margin-left: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 #results{
     background-color: white;
+    color: green;
     margin-left: 20px;
+}
+
+#msg{
+    color: red;
+    background-color: white;
+    margin-left: 120px;
+    margin-right: 120px;
+    font-size: 20px;
+    text-align: center;
 }
 
 #weight-guide{
