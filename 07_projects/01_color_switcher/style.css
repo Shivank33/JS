@@ -1,0 +1,65 @@
+html{
+    margin: 0;
+}
+
+span{
+    display: block;
+}
+
+.everything{
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+    display: block;
+    justify-content: center;
+}
+
+.heading{
+    font-size: 100px;
+    display: flex;
+    align-content: center;
+    margin-left: 270px;
+
+}
+
+.heading2{
+    font-size: 30px;
+}
+
+.button{
+    height: 120px;
+    width: 120px;
+    border: 3px solid black;
+    border-radius: 50%;
+    display:inline-flex;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+#violet{
+    background-color: violet;
+}
+
+#indigo{
+    background-color: indigo;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#green{
+    background-color: green;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#orange{
+    background-color: orange;
+}
+
+#red{
+    background-color: red;
+}
