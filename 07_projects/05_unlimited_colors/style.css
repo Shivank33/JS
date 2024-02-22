@@ -1,0 +1,33 @@
+body{
+    background-color:  #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+}
+
+.container{
+    background-color: coral;
+    height: 40vh;
+    width: 120vh;
+    font-size: 3vh;
+    border-radius: 20px;
+}
+.heading{
+    margin-top: 5vh;
+    color: antiquewhite;
+    margin-left: 15vh;
+}
+
+.start, .stop{
+    margin-left: 30vh;
+    height: 12vh;
+    width: 12vh;
+    border-radius: 50%;
+    background-color: #212121;
+    color:ghostwhite;
+    font-size: 20px;
+}
+
+
+
