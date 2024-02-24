@@ -1,0 +1,26 @@
+.container{
+    background-color: #1c1c1c;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 97vh;
+}
+
+.data{
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table, th, td {
+    border: 2px solid orangered;
+    height: 50px;
+    width: 500px;
+}
+
+.info{
+    color:blueviolet;
+    background-color:darkseagreen;
+    font-size: 20px;
+}
